@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="blogApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Application</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    
+    .sidebar {
+      width: 200px;
+      height: 100%;
+      background-color: #f0f0f0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .sidebar a:hover {
+      background-color:  #c3b7e1;
+      color: black;
+    }
+    .footer {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      
+      bottom: 0;
+      width: 100%;
+    }
+    .contact-icons {
+            display: flex;
+            align-items: center;
+        }
+        .contact-icons a {
+            margin-right: 10px;
+            color: #c3b7e1;
+            font-size: 24px;
+        }
+    /* Footer link styles */
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar" ng-controller="NavController" style="text-align: center; background-color: rgb(37, 31, 78);color: #ddd; font-weight: bolder;">
+    <a href="/login"><img src="/assets/logo.png" alt="logo" style="border-radius: 50%; margin-top: 30px;" height="120px"></a>
+    <a href="/home" style="color: #ddd;">Home</a>
+    <a href= "/javascript" style="color: #ddd;">Javascript</a>
+    <a href="/angular" style="color: #ddd;">Angular</a>
+    <a href="/java"style="color: #ddd;">Java </a>
+    <a href="/about"style="color: #ddd;">About</a>
+    <a href="/contact"style="color: #ddd;">Contact</a>
+    <a href="/post"style="color: #ddd;">Post</a><br><br><br>
+    <div class="contact-icons">
+      <a href="https://twitter.com/yourusername" style="color: #c3b7e1;"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/yourusername"style="color: #c3b7e1;"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:rutujatambe444@gmail.com" style="color: #c3b7e1;"><i class="far fa-envelope"></i></a>
+  </div>
+  </div>
+
+  <div style="margin-left: 200px; padding: 20px;">
+    <div ng-view></div>
+  </div>
+  <h1 style="color: rgb(37, 31, 78); height: 70px; margin-left: 220px;"> <img src="/assets/ByteBeat.png" alt="logoo" srcset="" style="height: 100px;"> ByteBeat Blogs website</h1>
+</body>
+<div style="height: 500px; padding: 70px; margin: 30px; margin-left: 240px; display: flex; column-gap: 40px;">
+  <div style=" width: 340px;height: 430px; background-color: #ebdcf7; border-radius: 20px; padding: 4px;"><img src="/assets/survey.webp" style="padding: 8px; width: 330px;">
+     <h2 style="text-align: center;">Angular Developer Survey 2023</h2>
+     <p>Over the past year we’ve been evolving Angular based on developer feedback and community trends.....</p>
+     <a href="/angular"><button style="text-align: center; margin-left: 140px;background-color: rgb(37, 31, 78);color: white;" >Read more</button></a>
+  </div>
+  <div style=" width: 340px;height: 430px; background-color: #ebdcf7;; border-radius: 20px; padding:4px"><img src="/assets/java1.png" style="padding: 8px; width: 330px; height: 200px;">
+    <h2 style="text-align: center;">The Arrival of Java 21</h2>
+    <p>Oracle is proud to announce the general availability of JDK 21. This release is the 12th Feature Release delivered on time through the six-month release cadence. This level of predictability allows developers.....</p>
+    <a href="/java"><button style="text-align: center; margin-left: 140px;background-color: rgb(37, 31, 78);color: white;" >Read more</button></a>
+ </div>
+ <div style=" width: 340px;height: 430px; background-color: #ebdcf7;; border-radius: 20px;padding: 4px;"><img src="/assets/jstoday.webp" style="padding: 8px; width: 330px;">
+  <h2 style="text-align: center;">Understanding the Module Pattern in JavaScript</h2>
+  <p>One of the most.....</p>
+  <a href="/javascript"><button style="text-align: center; margin-left: 140px;background-color: rgb(37, 31, 78);color: white;" >Read more</button></a>
+</div>
+<!---------------------------------------------------------------------------------------------------------------------------------->
+</div>
+<div style="height: 500px; padding: 70px; margin: 30px; margin-left: 240px; display: flex; column-gap: 40px;">
+  <div style=" width: 340px;height: 430px; background-color: #ebdcf7;; border-radius: 20px; padding: 4px;"><img src="/assets/survey.webp" style="padding: 8px; width: 330px;">
+     <h2 style="text-align: center;">Angular Developer Survey 2023</h2>
+     <p>Over the past year we’ve been evolving Angular based on developer feedback and community trends.....</p>
+     <a href="/angular"><button style="text-align: center; margin-left: 140px;background-color: rgb(37, 31, 78);color: white;" >Read more</button></a>
+  </div>
+  <div style=" width: 340px;height: 430px; background-color: #ebdcf7;; border-radius: 20px; padding:4px"><img src="/assets/java1.png" style="padding: 8px; width: 330px;height: 200px;">
+    <h2 style="text-align: center;">The Arrival of Java 21</h2>
+    <p>Oracle is proud to announce the general availability of JDK 21. This release is the 12th Feature Release delivered on time through the six-month release cadence. This level of predictability allows developers.....</p>
+    <a href="/java"><button style="text-align: center; margin-left: 140px;background-color: rgb(37, 31, 78);color: white;" >Read more</button></a>
+ </div>
+ <div style=" width: 340px;height: 430px; background-color: #ebdcf7;; border-radius: 20px;padding: 4px;"><img src="/assets/jstoday.webp" style="padding: 8px; width: 330px;">
+  <h2 style="text-align: center;">Understanding the Module Pattern in JavaScript</h2>
+  <p>One of the most .....</p>
+  <a href="/javascript"><button style="text-align: center; margin-left: 140px;background-color: rgb(37, 31, 78);color: white;" >Read more</button></a>
+</div>
+</div>
+<!-------------------------------------------------------------------------------------------------------------------------->
+<footer>
+  <div class="footer">
+    <p>&copy; 2024 Blog Website. All rights reserved. | Designed by <a href="#">Rutuja Tambe</a></p>
+  </div>
+</footer>
+</html>
+

@@ -1,0 +1,74 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+.contact-icons {
+            display: flex;
+            align-items: center;
+        }
+        .contact-icons a {
+            margin-right: 10px;
+            color: #c3b7e1;
+            font-size: 24px;
+        }
+</style>
+</head>
+<div class="sidebar" ng-controller="NavController" style="text-align: center; background-color: rgb(37, 31, 78);color: #ddd; font-weight: bolder;">
+  <a href="/login"><img src="/assets/logo.png" alt="logo" style="border-radius: 50%; margin-top: 30px;" height="120px"></a>
+  <a href="/home" style="color: #ddd;">Home</a>
+  <a href= "/javascript" style="color: #ddd;">Javascript</a>
+  <a href="/angular" style="color: #ddd;">Angular</a>
+  <a href="/java"style="color: #ddd;">Java </a>
+  <a href="/about"style="color: #ddd;">About</a>
+  <a href="/contact"style="color: #ddd;">Contact</a>
+  <a href="/post"style="color: #ddd;">Post</a><br><br><br>
+  <div class="contact-icons">
+    <a href="https://twitter.com/yourusername" style="color: #c3b7e1;"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/yourusername"style="color: #c3b7e1;"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:rutujatambe444@gmail.com" style="color: #c3b7e1;"><i class="far fa-envelope"></i></a>
+</div>
+</div>
+<div>
+    <img src="/assets/ang.png" alt="" srcset="" style="margin-left: 250px;">
+
+    <h1 style="text-align: center;">Angular Developer Survey 2023</h1><br>
+    <div style="display: flex;">
+    <div><img src="/assets/minko.jpg" alt="minko"style="border-radius: 50%;margin-left: 350px; height:70px;"></div>
+    <div><p><a href="https://medium.com/@mgechev" style="color: black; padding: 30px;">Minko gechev</a></p>
+        <p style="padding-left: 30px;">Published in angular blog</p></div>
+    </div>
+    <div style="margin-left: 350px; width: 50%; font-size: large"><hr>
+        <p>Over the past year we’ve been evolving Angular based on developer feedback and community trends. We receive developer feedback from dozens of sources including GitHub, social media, interviews, conferences, etc. One of the strongest guiding indicators which has been highly influential in our prioritization process are the results from the Angular developer survey.</p>
+       <p>In 2023 we delivered a lot to address developers needs for higher performance and better developer experience. Just to mention a few improvements: to make Angular more enjoyable to use, we shipped a brand new build pipeline that improves build speeds with up to 87%, revamped Angular’s reactivity system with Signals, and delivered deferrable views to help you make your apps faster.</p>
+       <!--------------------------------------------------------->
+       <h3>Results summary</h3><br>
+       <p>Today, I’d like to share a summary of the survey we ran earlier this year and the direction it helped us to set for Angular for 2024.</p>
+       <p>We received around 12k responses and on average it took developers ~2.5 minutes to complete their feedback. Most developers who responded to the survey work in teams of 3–10 people and over 70% use the two most recent versions of the framework.</p>
+       <img src="/assets/team.webp" alt="team" height="350px">
+       <p>Developers reported that they love Angular because of the excellent integration between core modules, framework’s runtime performance, ability to keep up to date with new releases, and the powerful dependency injection.</p>
+        <p>Some of the opportunities for improvement are around documentation and sample code, component authoring format, and initial load performance.</p>
+        <img src="/assets/survey.webp" alt="team" height="350px"><br><br>
+        <!--------------------------------------------------------->
+        <h3>Initial load time</h3>
+        <p>Based on previous surveys and talking to developers we saw that Angular can do better in initial load time. One of the opportunities we identified was a more ergonomic hybrid rendering story to enable more developers to take advantage of SSR or SSG and get faster CWVs.</p>
+        <p> v16 we’ve been working on making hybrid rendering an even more integral part of Angular. In v17 we improved the build pipeline, enabling better ng serve experience, and graduating hydration out of developer preview.</p>
+        <p>In v17 we also shipped deferrable views, which enable you to declaratively specify lazy loading of parts of your Angular templates and their transitive dependencies. For example, in the snippet below Angular will load the comments component and all of its transitive dependencies when the placeholder enters the viewport.</p>
+        <!--------------------------------------------------------------->
+        <h3>Component authoring format</h3>
+        <p>Standalone components, directives, and pipes opened the door for further improvements in Angular’s authoring experience. One of the first steps we took was the introduction of a new control flow which provides an experience that’s way closer to JavaScript, prevents common performance pitfalls, and in certain benchmarks is up to 90% faster!</p>
+        <p>In 2024 we’re going to continue iterating on the authoring experience by making incremental changes which will gradually improve DevEx. Early in Q1 we’ll kick off an exploration for opportunities and rank them by priority.</p>
+        <p>As anything else we’ve shipped lately, we’re committed to make gradual, incremental steps which we can automatically migrate and bring everyone along for the ride!</p>
+        <!------------------------------------------------------------------->
+        <h3>Looking forward to 2024</h3>
+        <p>The Angular Renaissance has been just picking up momentum over the past couple of years. We’re excited to continue this throughout 2024!</p>
+        <p>Above I listed just a few of the core goals we have for the next year which directly connect with the developer survey results. There’s much more across our framework, components, and tooling teams that you can find on our roadmap.</p>
+        <p>Thank you for being part of the Angular community and helping us calibrate the direction of the product throughout the renaissance we’ve been going through!</p>
+    </div><br><br>
+    <!-------------------------------------------------------------------------------------------------------------------------->
+<footer>
+    <div class="footer">
+      <p>&copy; 2024 Blog Website. All rights reserved. | Designed by <a href="#">Rutuja Tambe</a></p>
+    </div>
+  
+  </footer>
+    </div>

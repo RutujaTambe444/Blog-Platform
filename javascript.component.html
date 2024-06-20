@@ -1,0 +1,56 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<div class="sidebar" ng-controller="NavController" style="text-align: center; background-color: rgb(37, 31, 78);color: #ddd; font-weight: bolder;">
+  <a href="/login"><img src="/assets/logo.png" alt="logo" style="border-radius: 50%; margin-top: 30px;" height="120px"></a>
+  <a href="/home" style="color: #ddd;">Home</a>
+  <a href= "/javascript" style="color: #ddd;">Javascript</a>
+  <a href="/angular" style="color: #ddd;">Angular</a>
+  <a href="/java"style="color: #ddd;">Java </a>
+  <a href="/about"style="color: #ddd;">About</a>
+  <a href="/contact"style="color: #ddd;">Contact</a>
+  <a href="/post"style="color: #ddd;">Post</a><br><br><br>
+  <div class="contact-icons">
+    <a href="https://twitter.com/yourusername" style="color: #c3b7e1;"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com/yourusername"style="color: #c3b7e1;"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:rutujatambe444@gmail.com" style="color: #c3b7e1;"><i class="far fa-envelope"></i></a>
+</div>
+</div><br><br>
+<h1 style="color: rgb(37, 31, 78); height: 70px; margin-left: 220px;"> <img src="/assets/js.webp" alt="js" srcset="" style="height: 100px;"> JavaScript</h1>
+<div style="margin-left: 350px; width: 50%; font-size: large">
+<br><hr><br><img src="/assets/jstoday.webp" alt="jstoday" style="height: 500px;"><br>
+<br><h3>Understanding the Module Pattern in JavaScript: Encapsulation for Better Code</h3><br>
+<div><img src="/assets/logo.png" alt="autherlogo " style="height: 30px;"> JavascriptToday | January 8, 2024 </div><br><hr>
+<p>One of the most popular patterns for achieving encapsulation and maintaining clean code is the Module Pattern. Let’s delve into this pattern and understand how it can enhance your JavaScript projects.</p>
+<br><h3>What is the Module Pattern?</h3>
+<p>The Module Pattern is a design pattern that leverages closures to create private and public encapsulated components. It allows developers to organize code into modules, restricting access to certain variables and functions, mimicking the concept of private and public members within a module.</p>
+<br><h3>An Analogy</h3>
+<p>The Module Pattern is like having a secret box with a key. It uses closures, which are like the lock on the box, to keep some things private (the secret stuff inside). Imagine this box has two parts: one that only you can open (private), and another you can share (public). The Module Pattern lets developers organize code like this, hiding some parts (variables and functions) so only certain parts can be used or seen, just like having a secret box with a special key to access some things inside.</p>
+<br><h3>Creating Modules with the Module Pattern</h3>
+<img src="/assets/code.png"><br><br>
+<p>privateVariable and privateFunction are encapsulated within the module and cannot be accessed directly from outside. publicFunction is exposed and can access the private members, showcasing encapsulation.</p>
+<h3>Benefits of the Module Pattern</h3>
+<ul>
+  <li>Encapsulation and Information Hiding</li>
+  <p>The Module Pattern enables encapsulation, keeping data and functionality private within the module, preventing unintended access and modification from external code.</p>
+  <li>Cleaner Code and Reduced Global Scope Pollution</li>
+  <p>By encapsulating code within modules, the Module Pattern reduces the use of global variables, preventing conflicts and making code more maintainable</p>
+  <li>Reusability and Abstraction</li>
+  <p>Modules can expose only necessary functionalities while hiding implementation details, promoting code reuse and abstraction.</p>
+</ul>
+<br>
+<h3>Advanced Module Patterns</h3>
+<img src="/assets/code2.png" alt="code2"><br><br>
+<p>The Revealing Module Pattern reveals selected functions or variables explicitly, making them public by returning an object with references to the private functions or variables.</p>
+<br><br>
+<h3>Conclusion</h3>
+<br><p>The Module Pattern in JavaScript provides a powerful way to structure code, enabling encapsulation, information hiding, and better organization. By leveraging closures, it fosters cleaner, more maintainable, and reusable codebases, contributing to scalable and efficient JavaScript applications.</p>
+</div>
+<!------------------------------>
+<footer>
+  <div class="footer">
+    <p>&copy; 2024 Blog Website. All rights reserved. | Designed by <a href="#">Rutuja Tambe</a></p>
+  </div>
+
+</footer>
+
